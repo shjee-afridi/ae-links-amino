@@ -105,10 +105,19 @@ body {
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
+.image-container {
+    padding: 0 10px; /* Adjust the value as per your desired space */
+}
+
 .image {
+    position: relative;
+    background-color: transparent;
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
+
+
 
 
 /*-------------------------animations-----------------------*/
