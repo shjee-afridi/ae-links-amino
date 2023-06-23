@@ -24,6 +24,19 @@
   </head>
 
   <body>
+    <div class="language-button">
+      <button class="dropbtn" onclick="toggleDropdown()">EN ▼</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="translatePage('en')">English</a>
+        <a href="#" onclick="translatePage('fr')">Français</a>
+        <a href="#" onclick="translatePage('es')">Español</a>
+        <a href="#" onclick="translatePage('pt')">Português</a>
+        <a href="#" onclick="translatePage('ru')">Русский</a>
+        <a href="#" onclick="translatePage('gm')">Deutsch</a>
+        <a href="#" onclick="translatePage('ar')">عربي</a>
+        <!-- Add more language options as needed -->
+      </div>
+    </div>
     <!-- Parallax Pixel Background Animation -->
     <section class="animated-background">
       <div id="stars1"></div>
@@ -55,19 +68,19 @@
     </div>
 
     <div id="links">
-      <a class="link" href="https://aminoapps.com/invite/U1TEAESTD4" target="_blank">
+      <a id="amino" class="link" href="https://aminoapps.com/invite/U1TEAESTD4" target="_blank">
         <i class="fab fa-adn">&nbsp;</i>AMINO
       </a>
-       <a class="link" href="https://discord.gg/C4ccrnkYF5" target="_blank">
+       <a id="discord" class="link" href="https://discord.gg/C4ccrnkYF5" target="_blank">
         <i class="fab fa-discord">&nbsp;</i>DISCORD
       </a>
-      <a class="link" href="https://www.projz.com/s/c/AnimeEmpireaat" target="_blank">
+      <a id="projz" class="link" href="https://www.projz.com/s/c/AnimeEmpireaat" target="_blank">
         <i class="fa-solid fa-z">&nbsp;</i>PROJECT Z
       </a>
-      <a class="link" href="https://anime--empire.web.app/" target="_blank">
+      <a id="webapp" class="link" href="https://anime--empire.web.app/" target="_blank">
         <i class="fa-solid fa-crown">&nbsp;</i>AE WEB APP
       </a>
-       <a class="link" href="https://instagram.com/animeempire._?igshid=ZDdkNTZiNTM=" target="_blank">
+       <a id="insta" class="link" href="https://instagram.com/animeempire._?igshid=ZDdkNTZiNTM=" target="_blank">
         <i class="fab fa-instagram">&nbsp;</i>INSTAGRAM
       </a>
     </div>
@@ -118,6 +131,61 @@
       addCSS(`#stars3{ box-shadow:${stars3}}`)
       addCSS(`#stars3:after{ box-shadow:${stars3}}`)
 
+
+
+      // Function to translate the page based on the selected language
+      function translatePage(language) {
+        // You can implement the translation logic here
+        // Replace the content of elements with their translated versions
+
+        if (language === 'es') {
+          // Spanish translation
+          document.getElementById('userName').innerHTML = "Haz clic en 'Amino' para unirte a nuestra comunidad.<br>⚠️ ¡Únete a nuestros otros enlaces para tener respaldo también!!";
+          document.getElementById('hashtag').innerHTML = "CÓMO UNIRSE A LOS ENLACES";
+          // document.getElementById('amino').innerHTML = "Aminado";
+          // document.getElementById('discord').innerHTML = "Discordia";
+          // document.getElementById('projz').innerHTML = "Proyecto z";
+          // document.getElementById('webapp').innerHTML = "Aplicación web AE";
+          // document.getElementById('insta').innerHTML = "Instagram";
+          // Translate other elements as needed
+        }
+        else if (language === 'fr') {
+          // Spanish translation
+          document.getElementById('userName').innerHTML = "Cliquez sur 'Amino' pour rejoindre notre communauté.<br>⚠️ Rejoignez également nos autres liens pour la sauvegarde !!";
+          document.getElementById('hashtag').innerHTML = "COMMENT REJOINDRE LIENS";
+          // Translate other elements as needed
+        }
+        else if (language === 'pt') {
+          // Spanish translation
+          document.getElementById('userName').innerHTML = "Clique em 'Amino' para se juntar à nossa comunidade.<br>⚠️ Junte-se aos nossos outros links para backup também!!";
+          document.getElementById('hashtag').innerHTML = "COMO ACESSAR OS LINKS";
+          // Translate other elements as needed
+        }
+        else if (language === 'ru') {
+          // Spanish translation
+          document.getElementById('userName').innerHTML = "Нажмите «Амино», чтобы присоединиться к нашему сообществу.<br>⚠️ Присоединяйтесь и к другим нашим ссылкам для резервного копирования!!";
+          document.getElementById('hashtag').innerHTML = "КАК ПРИСОЕДИНИТЬСЯ К ССЫЛКАМ";
+          // Translate other elements as needed
+        }
+        else if (language === 'gm') {
+          // Spanish translation
+          document.getElementById('userName').innerHTML = "Klicken Sie auf „Amino“, um unserer Community beizutreten.<br>⚠️ Treten Sie auch unseren anderen Links bei, um ein Backup zu erhalten!!";
+          document.getElementById('hashtag').innerHTML = "SO TRETEN SIE LINKS BEI";
+          // Translate other elements as needed
+        }
+        else if (language === 'ar') {
+          // Spanish translation
+          document.getElementById('userName').innerHTML = "انقر فوق 'Amino' للانضمام إلى مجتمعنا. <br> ⚠️ انضم إلى روابطنا الأخرى للنسخ الاحتياطي أيضًا !!";
+          document.getElementById('hashtag').innerHTML = "كيفية الانضمام إلى الروابط";
+          // Translate other elements as needed
+        }
+        else {
+          // Default to English or add more languages
+          document.getElementById('userName').innerHTML = "Click 'Amino' to join our community.<br>⚠️ Join our other links for backup too!!";
+          document.getElementById('hashtag').innerHTML = "HOW TO JOIN LINKS";
+          // Translate other elements as needed
+        }
+      }
     </script>
   </body>
 </html>
