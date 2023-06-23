@@ -261,7 +261,7 @@ body {
     border-radius: 20%;
     margin-top: 10vw; /* Use viewport width unit */
     margin-right: 10vw; /* Use viewport width unit */
-    font-size: 2.5vw; /* Use viewport width unit */
+    font-size: 4vw; /* Use viewport width unit */
     cursor: pointer;
   }
   
